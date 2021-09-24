@@ -574,13 +574,27 @@ $('.price_table thead tr').append("<th class='column-4' style='text-align:left;w
 
 $('#test').html("<a href='#order_form_pop' class='order fancybox-inline'>Заказать</a>");
 
-$( ".order" ).click(function() {
- var item = $(this).parent().parent().find('.column-1').html();
-var count = $(this).parent().find('input').val();
-$('#count').val(count);
-$('#item').val(item);
-$("#link_order")[0].click();
-});
+    $(".order").click(function () {
+        var item = $(this).parent().parent().find('.column-1').html();
+        var description = $(this).parent().parent().find('.column-2');
+        var application_area = $(this).parent().parent().find('.column-3').html();
+        var price = $(this).parent().parent().find('.column-4').html();
+        var count = $(this).parent().find('input').val();
+        let productName = $(description).find('a').text();
+        $('#home_url').val(window.location.origin);
+        $('#product_name').val(productName);
+        $('#count').val(count);
+        $('#item').val(item);
+        $('#price').val(price).attr('readonly', true).css({"font-size": "25px", "border": "none"})
+        $('#description').val(description.html()).attr('readonly', true).css({
+            "font-size": "25px",
+            "border": "none"
+        });
+
+        $('#application_area').val(application_area);
+        $('#total_paid').val(typeof(count) * typeof(price));
+        $("#link_order")[0].click();
+    });
 }
 </script>	
 		<!-- </div> ilvel-->

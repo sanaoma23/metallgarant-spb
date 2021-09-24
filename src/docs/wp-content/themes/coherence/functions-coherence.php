@@ -548,18 +548,150 @@ if(!function_exists('avia_show_menu_description'))
 	}
 }
 
+function parseJson($roistatForm)
+{
+    date_default_timezone_set('Europe/Moscow');
+    $array = [];
+    $array['address_delivery'] = ['address1' => "", 'address2' => ""];
+    $array['address_invoice'] = ['address1' => "", 'address2' => ""];
+    $array['application'] = ['phone' => $roistatForm['r_fields']["phone"], 'other' => $roistatForm['r_fields']["other"]];
+    $array['shop_url'] = ['domain' => $roistatForm['r_fields']["home_url"], 'domain_ssl' => "", 'physical_uri' => ""];
+    $array['customer'] =   [
+        'id_customer' => "",
+        'id_shop_group' => "",
+        'id_shop' => "",
+        'id_gender' => "",
+        'id_default_group' => "",
+        'id_lang' => "",
+        'id_risk' => "",
+        'company' => "",
+        'siret' => "",
+        'ape' => "",
+        'firstname' => $roistatForm['r_fields']["name"],
+        'lastname' => "",
+        'email' => "",
+        'birthday' => "",
+        'ip_registration_newsletter' => "",
+        'newsletter_date_add' => "",
+        'optin' => "",
+        'outstanding_allow_amount' => "",
+        'show_public_prices' => "",
+        'max_payment_days' => "",
+        'secure_key' => "",
+        'note' => "",
+        'active' => "",
+        'is_guest' => "",
+        'deleted' => "",
+        'date_add' => "",
+        'date_upd' => "",
+    ];;
+    $array['current_state'] = "";
+    $array['conversion_rate'] = "";
+    $array['shipping_number'] = "";
+    $array['total_discounts'] = "";
+    $array['total_discounts_tax_incl'] = "";
+    $array['total_discounts_tax_excl'] = "";
+    $array['total_paid'] = $roistatForm['r_fields']["total_paid"];
+    $array['total_paid_tax_incl'] = "";
+    $array['total_paid_tax_excl'] = "";
+    $array['total_paid_real'] = "";
+    $array['total_products'] = "";
+    $array['total_products_wt'] = "";
+    $array['total_shipping'] = "";
+    $array['total_shipping_tax_incl'] = "";
+    $array['total_shipping_tax_excl'] = "";
+    $array['carrier_tax_rate'] = "";
+    $array['total_wrapping'] = "";
+    $array['total_wrapping_tax_incl'] = "";
+    $array['total_wrapping_tax_excl'] = "";
+    $array['invoice_number'] = "";
+    $array['delivery_number'] = "";
+    $array['invoice_date'] = "";
+    $array['delivery_date'] = "";
+    $array['valid'] = "";
+    $array['date_add'] = date('Y-m-d G:i:s');
+    $array['date_upd'] = "";
+    $array['reference'] = "";
+    $array['id'] = "";
+    $array['product_list'] =
+        [
+            'id_product' => "",
+            'product_link' => $roistatForm['r_fields']["tovar_url"],
+            'cart_quantity' => $roistatForm['r_fields']["quantity"],
+            'name' => $roistatForm['r_fields']["product_name"],
+            'description_short' => "",
+            'available_for_order' => "",
+            'price' => $roistatForm['r_fields']["price"],
+            'active' => "",
+            'unity' => "",
+            'unit_price_ratio' => "",
+            'quantity_available' => "",
+            'width' => "",
+            'height' => "",
+            'depth' => "",
+            'out_of_stock' => "",
+            'weight' => "",
+            'date_add' => "",
+            'date_upd' => "",
+            'quantity' => "",
+            'category' => "",
+            'unique_id' => "",
+            'customization_quantity' => "",
+            'id_customization' => "",
+            'weight_attribute' => "",
+            'legend' => "",
+            'stock_quantity' => "",
+            'price_without_reduction' => "",
+            'price_with_reduction' => "",
+            'price_with_reduction_without_tax' => "",
+            'total' => "",
+            'total_wt' => "",
+            'price_wt' => "",
+            'reduction_applies' => "",
+            'quantity_discount_applies' => "",
+            'features' => "",
+            'rate' => "",
 
+        ];
+    $array['utm'] = [
+        'utm_source' => $_COOKIE["utm_source"],
+        'utm_medium' =>  $_COOKIE["utm_medium"],
+        'utm_campaign' =>  $_COOKIE["utm_campaign"],
+        'utm_content' =>  $_COOKIE["utm_content"],
+        'utm_term' => $_COOKIE["utm_term"],
+    ];
+    return $array;
+}
 //ROISTAT CODE BEGIN
 function sendToRoistat($WPCF7_ContactForm)
 {
-    require_once $_SERVER['DOCUMENT_ROOT'].'/wp-content/themes/coherence/roistat/Bitrix.php';
     $roistatForm = getRoistatForm($_REQUEST['_wpcf7'], $_SERVER['HTTP_REFERER']);
-    $roistatForm['managerId'] = getManagerByPage($_SERVER['HTTP_REFERER']);
-    $B24 = new Bitrix('metallgarant.bitrix24.ru', 34, 'i9s3wissxiipywx8');
-    initDeal($roistatForm, $B24);
+    add_lead_to_b24(json_encode(parseJson($roistatForm)));
 }
 add_action("wpcf7_before_send_mail", "sendToRoistat");
+function add_lead_to_b24($arSend)
+{
 
+    $curl = curl_init('https://mi-sosnovomg.loc/test.php');
+    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $arSend);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_HTTPHEADER,
+        array('Content-Type: application/json')
+    );
+
+    curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+
+    $result = curl_exec($curl);
+
+
+    curl_close($curl);
+
+
+    return $result;
+
+}
 /**
  * @param $roistatForm
  * @param $B24 Bitrix
@@ -1004,24 +1136,45 @@ function getRoistatForm($wpcf7, $referer)
                         '/prays-na-nerzhaveyushhuyu-produktsiyu',
                         '/prays-na-metallokonstruktsii'
             		],
-		            'fields' => [
-		                [
-		                    'alias' => 'name',
-		                    'name'  => 'your-name'
-		                ],
-		                [
-		                    'alias' => 'phone',
-		                    'name'  => 'mobil'
-		                ],
-		                [
-		                    'alias' => 'product',
-		                    'name'  => 'text-118'
-		                ],
-		                [
-		                    'alias' => 'quantity',
-		                    'name'  => 'number-347'
-		                ],
-		            ],
+                    'fields' => [
+                        [
+                            'alias' => 'home_url',
+                            'name' => 'text-705'
+                        ],
+                        [
+                            'alias' => 'name',
+                            'name' => 'your-name'
+                        ],
+                        [
+                            'alias' => 'phone',
+                            'name' => 'mobil'
+                        ],
+                        [
+                            'alias' => 'product',
+                            'name' => 'text-118'
+                        ],
+                        [
+                            'alias' => 'quantity',
+                            'name' => 'number-347'
+                        ],
+                        [
+                            'alias' => 'price',
+                            'name' => 'text-514'
+                        ],
+                        [
+                            'alias' => 'description',
+                            'name' => 'text-622'
+                        ],
+                        [
+                            'alias' => 'product_name',
+                            'name' => 'text-2'
+                        ],
+                        [
+                            'alias' => 'other',
+                            'name' => 'textarea-868'
+                        ],
+
+                    ],
             	],
                 [
                     'name'  => 'Узнать подробнее',

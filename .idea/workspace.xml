@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b11d43d6-5bed-4ba7-9332-f92272c74b43" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/functions-coherence.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/functions-coherence.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/includes/loop-portfolio-single-profnastil-sub.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/includes/loop-portfolio-single-profnastil-sub.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/includes/loop-portfolio-single-profnastil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/includes/loop-portfolio-single-profnastil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/includes/loop-portfolio-single.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/docs/wp-content/themes/coherence/includes/loop-portfolio-single.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/src/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/datasource" />
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/log" />
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/core" />
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/collection" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/utility" />
+      <path value="$PROJECT_DIR$/src/vendor/composer" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/src/vendor/cakephp/database" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/src/vendor/robmorgan/phinx" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1y7PIukeNOFeWUEk1yjtZsCap8b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mi-sosnovomg" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docker" />
+      <recent name="$PROJECT_DIR$/docker/services/mysql/dumps" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/docs" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b11d43d6-5bed-4ba7-9332-f92272c74b43" name="Default Changelist" comment="" />
+      <created>1631599576729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631599576729</updated>
+      <workItem from="1631599578076" duration="11127000" />
+      <workItem from="1631611673918" duration="6432000" />
+      <workItem from="1631619340698" duration="7991000" />
+      <workItem from="1631689538006" duration="8159000" />
+      <workItem from="1631774884792" duration="694000" />
+      <workItem from="1631801659346" duration="703000" />
+      <workItem from="1631861349030" duration="1261000" />
+      <workItem from="1632121062689" duration="15586000" />
+      <workItem from="1632208064529" duration="4558000" />
+      <workItem from="1632216492100" duration="14316000" />
+      <workItem from="1632294340147" duration="19605000" />
+      <workItem from="1632317944946" duration="2294000" />
+      <workItem from="1632376829835" duration="25311000" />
+      <workItem from="1632467266052" duration="15361000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2590" y="345" width="559" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631600220369">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2590" y="345" width="559" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1631600220369" />
+    <state x="2616" y="393" width="518" height="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1632127725076">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2616" y="393" width="518" height="301" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632127725076" />
+    <state x="2386" y="88" width="977" height="911" key="CommitChangelistDialog2" timestamp="1632222597083">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2386" y="88" width="977" height="911" key="CommitChangelistDialog2/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632222597083" />
+    <state x="2663" y="298" width="424" height="491" key="FileChooserDialogImpl" timestamp="1632467910957">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2663" y="298" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632467910957" />
+    <state x="2675" y="465" width="399" height="156" key="NewPhpFileDialog" timestamp="1632467322636">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2675" y="465" width="399" height="156" key="NewPhpFileDialog/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632467322636" />
+    <state x="2551" y="223" width="647" height="640" key="RollbackChangesDialog" timestamp="1632223641306">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2551" y="223" width="647" height="640" key="RollbackChangesDialog/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632223641306" />
+    <state x="2020" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1632470726979">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2020" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632470726979" />
+    <state x="2490" y="153" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1632139606050">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2490" y="153" width="770" height="780" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632139606050" />
+    <state x="2651" y="455" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1631691243926">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2651" y="455" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1631691243926" />
+    <state x="2431" y="450" width="1215" height="580" key="find.popup" timestamp="1632486298708">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2431" y="450" width="1215" height="580" key="find.popup/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632486298708" />
+    <state x="2544" y="245" key="run.anything.popup" timestamp="1632396773704">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2544" y="245" key="run.anything.popup/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632396773704" />
+    <state x="2542" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1632486656179">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2542" y="239" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632486656179" />
+    <state x="2605" y="371" width="540" height="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1632474267007">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2605" y="371" width="540" height="344" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1632474267007" />
+  </component>
+</project>
